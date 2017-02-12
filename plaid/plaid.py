@@ -85,14 +85,26 @@ def get_directory_tree():
 
 
 def main():
-    mypath = os.path.join(os.path.expanduser('~'), '.plaidrc')
-    with open(mypath, 'r') as f:
-        yaml_dict = yaml.load(f.read())
+    try:
+        mypath = os.path.join(os.path.expanduser('~'), '.plaidrc')
+        with open(mypath, 'r') as f:
+            yaml_dict = yaml.load(f.read())
+    except IOError:
+        blank_rc_file = """---
+
+include_files: []
+exclude_files: []
+        """
+        with open(mypath, 'w') as fw:
+            fw.write(blank_rc_file)
+        yaml_dict = {}
 
     files = list(get_directory_tree())
+
     yml_files = [x for x in files if x.endswith('.yml')]
     jinja_files = [x for x in files if x.endswith('.j2')]
     py_files = [x for x in files if x.endswith('.py')]
+
     status = []
     status = do_check(yml_check, yml_files, status)
     status = do_check(jinja_check, jinja_files, status)
