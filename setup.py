@@ -10,8 +10,11 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0',
-    # TODO: put package requirements here
+    'click>=6.0',
+    'flake8>=2.6.0',
+    'Jinja2>=2.9.4',
+    'pyflakes>=1.2.3',
+    'PyYAML>=3.11'
 ]
 
 test_requirements = [
@@ -20,7 +23,7 @@ test_requirements = [
 
 setup(
     name='plaid',
-    version='0.1.1',
+    version='0.1.2',
     description="Python Ansible role checker",
     long_description=readme + '\n\n' + history,
     author="Scott Ison",
