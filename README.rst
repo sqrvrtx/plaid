@@ -6,6 +6,15 @@ Plaid
 .. image:: https://img.shields.io/pypi/v/plaid.svg
         :target: https://pypi.python.org/pypi/plaid
 
+.. image:: https://img.shields.io/pypi/l/plaid.svg
+    :target: https://pypi.python.org/pypi/plaid
+
+.. image:: https://img.shields.io/pypi/wheel/plaid.svg
+    :target: https://pypi.python.org/pypi/plaid
+
+.. image:: https://img.shields.io/pypi/pyversions/plaid.svg
+    :target: https://pypi.python.org/pypi/plaid
+
 .. image:: https://img.shields.io/travis/sqrvrtx/plaid.svg
         :target: https://travis-ci.org/sqrvrtx/plaid
 
