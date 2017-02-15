@@ -13,10 +13,6 @@ Plaid
         :target: https://plaid.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/sqrvrtx/plaid/shield.svg
-     :target: https://pyup.io/repos/github/sqrvrtx/plaid/
-     :alt: Updates
-
 
 Python Ansible role checker
 
