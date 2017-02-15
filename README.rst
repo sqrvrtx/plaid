@@ -30,7 +30,7 @@ Features
 
 Generic ansible role checker. Parses yaml, jinja2 templates and checks for
 pep8/flake 8 python errors. Also check for files we expect and those we don't.
-This is configured in the .plaidrc file:
+This is configured in the .plaidrc file::
 
     ---
     
