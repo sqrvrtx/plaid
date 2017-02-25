@@ -38,10 +38,17 @@ pep8/flake 8 python errors. Also check for files we expect and those we don't.
 This is configured in the .plaidrc file::
 
     ---
-    
+
     include_files:
       - README.md
       - molecule.yml
-    
+
     exclude_files:
       - .travis.yml
+
+
+Also in the case a user creates a base role using ansible-galaxy, the tool
+checks for 'empty' main.yml files in 'tasks', 'defaults', 'handlers' and 'vars',
+and checks for empty 'files' and 'templates' directories. In the future there
+are plans to check the default information in the 'README.md', 'meta' and
+'tests'.
