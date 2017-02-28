@@ -124,7 +124,7 @@ def check_for_empty_defaults(status):
                     # ---
                     # (tasks|vars|defaults) file for myrole
                     #
-                    if re.match(r'^---\n# \w+ file for \w+\n$', f.read()):
+                    if re.match(r'^---\n# \S+ file for \S+\n$', f.read()):
                         status.append("Empty file, please remove file and "
                                       "directory: {0}".format(joined_filename))
             except IOError:

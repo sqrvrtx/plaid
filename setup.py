@@ -23,7 +23,7 @@ test_requirements = [
 
 setup(
     name='plaid',
-    version='0.1.6',
+    version='0.1.7',
     description="Python Ansible role checker",
     long_description=readme + '\n\n' + history,
     author="Scott Ison",
